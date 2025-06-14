@@ -1,66 +1,83 @@
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Giới thiệu
 
-## About Laravel
+Dự án là một trang web thương mại điện tử chuyên cung cấp các sản phẩm cà phê chất lượng cao. Trang web được xây dựng trên nền tảng Laravel, một framework PHP mạnh mẽ và linh hoạt, giúp việc phát triển trở nên dễ dàng và thú vị hơn.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Chức năng chính
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Quản lý sản phẩm**: Cho phép quản trị viên thêm, chỉnh sửa và xóa sản phẩm.
+- **Quản lý đơn hàng**: Người dùng có thể đặt hàng, xem lịch sử đơn hàng và theo dõi trạng thái đơn hàng.
+- **Đánh giá sản phẩm**: Người dùng có thể đánh giá và nhận xét về các sản phẩm đã mua.
+- **Quản lý người dùng**: Hỗ trợ đăng ký, đăng nhập, chỉnh sửa hồ sơ và đổi mật khẩu.
+- **Quản lý giao dịch**: Quản trị viên có thể theo dõi và quản lý các giao dịch tài chính.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Hướng dẫn cài đặt
 
-## Learning Laravel
+1. **Clone repository**:
+    ```sh
+    git clone https://github.com/nguyenvanchienn/WEBNC.git
+    ```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+2. **Cài đặt các gói phụ thuộc**:
+    ```sh
+    composer install
+    npm install
+    ```
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+3. **Cấu hình môi trường**:
+    - Tạo file [.env](http://_vscodecontentref_/0) từ file mẫu [.env.example](http://_vscodecontentref_/1):
+        ```sh
+        cp .env.example .env
+        ```
+    - Cập nhật các thông tin cấu hình trong file [.env](http://_vscodecontentref_/2) (database, mail, etc.).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+4. **Tạo khóa ứng dụng**:
+    ```sh
+    php artisan key:generate
+    ```
 
-## Laravel Sponsors
+5. **Chạy các migration và seed dữ liệu**:
+    ```sh
+    php artisan migrate --seed
+    ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+6. **Khởi động server**:
+    ```sh
+    php artisan serve
+    ```
 
-### Premium Partners
+## Hướng dẫn sử dụng
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### Người dùng
 
-## Contributing
+- **Đăng ký và đăng nhập**: Người dùng có thể đăng ký tài khoản mới hoặc đăng nhập vào tài khoản hiện có.
+- **Mua hàng**: Duyệt qua các sản phẩm, thêm vào giỏ hàng và tiến hành thanh toán.
+- **Đánh giá sản phẩm**: Sau khi mua hàng, người dùng có thể để lại đánh giá và nhận xét về sản phẩm.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Quản trị viên
 
-## Code of Conduct
+- **Quản lý sản phẩm**: Thêm mới, chỉnh sửa và xóa sản phẩm.
+- **Quản lý đơn hàng**: Xem và cập nhật trạng thái đơn hàng.
+- **Quản lý người dùng**: Xem danh sách người dùng và chỉnh sửa thông tin nếu cần.
+- **Quản lý giao dịch**: Theo dõi các giao dịch tài chính và tạo báo cáo.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Tài liệu và Hỗ trợ
 
-## Security Vulnerabilities
+- [Tài liệu Laravel](https://laravel.com/docs)
+- [Laravel Bootcamp](https://bootcamp.laravel.com)
+- [Laracasts](https://laracasts.com)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Đóng góp
 
-## License
+Chúng tôi hoan nghênh mọi đóng góp từ cộng đồng. Nếu bạn muốn đóng góp, vui lòng fork repository này và gửi pull request.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Liên hệ
+
+Nếu bạn có bất kỳ câu hỏi hoặc phản hồi nào, vui lòng liên hệ với chúng tôi.
+
+---
+
+Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!
