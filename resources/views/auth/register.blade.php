@@ -1,5 +1,6 @@
 @extends('/layouts/auth')
 
+
 @push('css-dependencies')
 <link href="/css/auth.css" rel="stylesheet" />
 @endpush

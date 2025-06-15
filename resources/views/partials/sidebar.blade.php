@@ -8,6 +8,7 @@
     padding: 20px;
 }
 
+
 .sb-sidenav .sb-sidenav-menu-heading {
     color: #8d785f;
     font-weight: bold;

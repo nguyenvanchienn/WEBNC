@@ -1,5 +1,6 @@
 @extends('/layouts/main')
 
+
 @push('css-dependencies')
 <link href="/css/transaction.css" rel="stylesheet" />
 @endpush

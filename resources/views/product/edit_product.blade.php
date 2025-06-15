@@ -1,5 +1,6 @@
 @extends('/layouts/main')
 
+
 @push('css-dependencies')
 <style>
     .container-fluid {

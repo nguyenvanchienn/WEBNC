@@ -1,5 +1,6 @@
 @extends('/layouts/main')
 
+
 @push('css-dependencies')
 <link href="/css/profile.css" rel="stylesheet" />
 @endpush
