@@ -1,69 +1,7 @@
 @extends('/layouts/main')
 
 @push('css-dependencies')
-<style>
-    .container-fluid {
-        background: #f5f5dc; /* Màu nền kem */
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
 
-    .card {
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-body {
-        padding: 30px;
-    }
-
-    .nav-tabs .nav-link.active {
-        background-color: #d2b48c; /* Màu kem */
-        color: #fff;
-        border-radius: 5px;
-    }
-
-    .form-group label {
-        font-weight: bold;
-    }
-
-    .form-control {
-        border-radius: 5px;
-    }
-
-    .btn-primary {
-        background-color: #d2b48c; /* Màu kem */
-        border-color: #d2b48c;
-        transition: background-color 0.3s ease, border-color 0.3s ease;
-    }
-
-    .btn-primary:hover {
-        background-color: #c0a080; /* Màu kem đậm hơn khi hover */
-        border-color: #c0a080;
-    }
-
-    .btn-danger {
-        background-color: #dc3545;
-        border-color: #dc3545;
-        transition: background-color 0.3s ease, border-color 0.3s ease;
-    }
-
-    .btn-danger:hover {
-        background-color: #c82333;
-        border-color: #bd2130;
-    }
-
-    .custom-file-label {
-        cursor: pointer;
-    }
-
-    .img-account-profile {
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-</style>
 @endpush
 
 @push('scripts-dependencies')

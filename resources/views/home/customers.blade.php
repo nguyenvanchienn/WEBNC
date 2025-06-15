@@ -2,50 +2,7 @@
 
 @push('css-dependencies')
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
-<style>
-    body {
-        background: #f5f5dc !important; /* Màu nền kem */
-    }
 
-    .container-fluid {
-        background: #f5f5dc; /* Màu nền kem */
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .card {
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-header {
-        background-color: #d2b48c; /* Màu kem */
-        color: #fff;
-        font-weight: bold;
-        border-radius: 10px 10px 0 0;
-    }
-
-    .card-body {
-        background-color: #fff;
-        border-radius: 0 0 10px 10px;
-    }
-
-    table.dataTable thead {
-        background-color: #d2b48c; /* Màu kem */
-        color: #fff;
-    }
-
-    table.dataTable tbody tr {
-        transition: background-color 0.3s ease;
-    }
-
-    table.dataTable tbody tr:hover {
-        background-color: #f5f5dc; /* Màu nền kem */
-    }
-    
-</style>
 
 @endpush
 
