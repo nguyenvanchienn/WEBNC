@@ -8,6 +8,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class NoteSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
      *

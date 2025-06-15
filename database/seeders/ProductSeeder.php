@@ -8,6 +8,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class ProductSeeder extends Seeder
 {
+
     /**
      * Chạy các lệnh seed của cơ sở dữ liệu.
      *

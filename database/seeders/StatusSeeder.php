@@ -8,6 +8,7 @@ use Illuminate\Database\Seeder;
 
 class StatusSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
      *
